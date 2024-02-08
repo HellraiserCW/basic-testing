@@ -1,10 +1,11 @@
+import _ from 'lodash';
+
 import {
   BankAccount,
   InsufficientFundsError,
   SynchronizationFailedError,
   TransferFailedError,
 } from './index';
-import _ from 'lodash';
 
 describe('BankAccount', () => {
   let account1: BankAccount;
