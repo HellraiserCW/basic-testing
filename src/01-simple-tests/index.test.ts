@@ -38,8 +38,10 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should return null for invalid arguments', () => {
-    const result = simpleCalculator({ a: '40', b: 2, action: Action.Add });
+    const result1 = simpleCalculator({ a: '40', b: 2, action: Action.Add });
+    const result2 = simpleCalculator({ a: 40, b: '2', action: Action.Add });
 
-    expect(result).toBe(null);
+    expect(result1).toBe(null);
+    expect(result2).toBe(null);
   });
 });
